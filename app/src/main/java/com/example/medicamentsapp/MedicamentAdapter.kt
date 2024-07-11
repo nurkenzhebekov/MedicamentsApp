@@ -22,9 +22,9 @@ class MedicamentAdapter : ListAdapter<Medicament, MedicamentAdapter.MedicamentVi
     class MedicamentViewHolder(private val binding: ItemMedicamentBinding) : RecyclerView.ViewHolder(binding.root) {
         fun bind(medicament: Medicament) {
             binding.apply {
-                medicamentName.text = medicament.name
-                medicamentDescription.text = medicament.description
-                medicamentTime.text = medicament.time
+                tvTitleTx.text = medicament.name
+                tvDescriptionTx.text = medicament.description
+                tvTimeTx.text = medicament.time
                 progressBar.progress = 10
             }
         }
